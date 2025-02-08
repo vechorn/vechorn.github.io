@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: RGB(169, 169, 169);
+  }
+  
+  .intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: RGB(128, 0, 32); /* Naranja brillante */
+    color: #ffffff;
+  }
+  
+  .intro p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-style: italic;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  @media (max-width: 768px) {
+    .intro {
+      padding: 30px 20px;
+    }
+  
+    .intro p {
+      font-size: 18px;
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .intro p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+
+  
+  /* Sección Historia */
+  .historia {
+    
+    padding: 80px 20px;
+    color: #fff;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: RGB(192, 192, 192); 
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Título */
+  .historia h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1d1d1d; /* Color oscuro para el título */
+  }
+  
+  /* Contenedor de texto e imagen */
+  .contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .texto {
+    flex: 1;
+    padding: 0 20px;
+    font-size: 21px;
+    line-height: 1.8;
+    color: #333; /* Gris oscuro para el texto */
+    text-align: left;
+  }
+  
+  .imagen {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Diseño Responsivo */
+  @media (max-width: 768px) {
+    .contenido {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .imagen img {
+      max-width: 100%;
+    }
+  }
+
+  hr.separador {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, #000000, #000000); /* Gradiente dorado */
+    margin: 40px 0; /* Espaciado arriba y abajo */
+    width: 100%;
+    max-width: 1200px; /* Máxima anchura para mantenerlo dentro del diseño */
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.6; /* Ligera transparencia para hacerlo más sutil */
+  }
+  
+  .equipo {
+    padding: 80px 20px;
+    color: #fff;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: RGB(192, 192, 192);
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+
+/* Título */
+.equipo h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1d1d1d; /* Color oscuro para el título */
+}
+
+/* Subtítulos y texto */
+.equipo h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #1d1d1d; /* Subtítulos en negro */
+}
+
+.equipo p {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #333; /* Gris oscuro para el texto */
+  text-align: left;
+}
+
+/* Contenedor de texto e imagen */
+.contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+  .contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagen img {
+    max-width: 100%;
+  }
+}

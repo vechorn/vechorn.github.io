@@ -1,0 +1,55 @@
+
+.consejos-lista {
+    list-style-type: none;
+    color: azure;
+    font-size: clamp(1.4rem, 1.6vw, 1.8rem);
+    margin-left: 1rem 0;
+}
+.consejos-lista li {
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    background-color: rgb(70, 70, 70);
+    box-shadow: 0 2px 4px rgba(27, 26, 26, 0.403);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.consejos-lista:hover li:hover {
+    background-color: #1c1c1c;
+    transition: translateY(-2px);
+}
+.consejos-lista strong {
+    font-weight: 600;
+    color: #ff6961;
+}
+/* Estilos para la galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.galeria-imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.galeria-imagen:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+   
+}

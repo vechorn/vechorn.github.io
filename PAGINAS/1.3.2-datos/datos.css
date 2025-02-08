@@ -1,0 +1,22 @@
+   
+    .section {
+        background-color: #333;
+        padding: 20px;
+        margin-bottom: 40px;        
+    }
+    .div1 {
+        background-color: #1c1c1c58;
+        padding: 20px;
+    }
+    img {
+        width: 100%;
+        max-width: 1200px;
+        position: relative;
+        object-fit: cover;
+        border-radius: 8px;
+        filter: sepia(50%) saturate(130%) brightness(90%);
+        transition: filter 0.3s ease;
+    }
+    img:hover {
+        filter: sepia(0%) saturate(100%) brightness(100%);
+    }

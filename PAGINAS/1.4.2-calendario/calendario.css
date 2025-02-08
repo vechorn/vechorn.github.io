@@ -1,0 +1,214 @@
+
+/* Establecer la paleta de colores */
+:root {
+    --color-fondo: #1c1c1c; /* Fondo oscuro */
+    --color-dorado: #d4af37; /* Color dorado */
+    --color-gris-claro: #f1f1f1; /* Gris claro para textos secundarios */
+    --color-blanco: #fff; /* Blanco para textos */
+    --color-negro: #000; /* Negro para detalles */
+    --color-gris-oscuro: #333; /* Gris oscuro para subtítulos y elementos secundarios */
+  }
+  .hero-image {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Altura adaptable a la pantalla */
+    background-image: url('../../IMAGENES/logo-blanco.jpg'); /* Reemplaza con tu imagen */
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-text {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: white;
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: clamp(1.1rem, 2vw, 2.3rem); /* Tamaño del texto grande */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    max-width: 90%; /* Evita que el texto sea demasiado ancho */
+  }
+
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .hero-text {
+      padding: 8px 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-text {
+      bottom: 5%;
+      left: 5%;
+      padding: 5px 10px;
+    }
+  }
+  .main1 {
+    padding: 80px 20px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* Body y fondo general */
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-blanco);
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Estilo para los eventos próximos */
+  #eventos-lista {
+    margin-top: 20px;
+    
+    background-color: var(--color-gris-oscuro);
+    border-radius: 10px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .evento {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--color-gris-oscuro);
+    border-radius: 8px;
+    border: 1px solid var(--color-dorado);
+  }
+  
+  .evento h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-dorado);
+  }
+  
+  .evento p {
+    font-size: 16px;
+    color: var(--color-gris-claro);
+  }
+  
+  .evento p strong {
+    color: var(--color-blanco);
+  }
+  
+  
+  
+  /* Enlaces */
+  a {
+    color: var(--color-dorado);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #c8a01a;
+    text-decoration: underline;
+  }
+  
+  /* Títulos secundarios y párrafos */
+  h2, h3 {
+    color: var(--color-dorado);
+  }
+  
+  p {
+    color: var(--color-gris-claro);
+    line-height: 1.6;
+  }
+  
+  /* Asegurarse de que los elementos estén bien espaciados */
+  .container {
+    padding: 20px;
+  }
+  
+  /* Ajustes para dispositivos móviles */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    
+    header h1 {
+      font-size: 28px;
+    }
+    
+    #eventos-lista {
+      max-width: 100%;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  
+  /* Estilo general para la tabla */
+table {
+  
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-gris-oscuro);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+/* Estilo para las cabeceras de la tabla */
+th {
+  background-color: var(--color-negro);
+  color: var(--color-dorado);
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 2px solid var(--color-dorado);
+}
+
+/* Estilo para las celdas de la tabla */
+td {
+  background-color: var(--color-fondo);
+  color: var(--color-gris-claro);
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-dorado);
+}
+
+/* Estilo para las filas pares */
+tr:nth-child(even) td {
+  background-color: var(--color-gris-oscuro);
+}
+
+/* Estilo para la fila activa o cuando el usuario pasa el ratón */
+tr:hover {
+  background-color: var(--color-negro);
+  cursor: pointer;
+}
+
+/* Estilo para la primera columna */
+td:first-child {
+  font-weight: bold;
+  color: var(--color-dorado);
+}
+
+/* Estilo para el borde de la tabla */
+table, th, td {
+  border: 1px solid var(--color-dorado);
+}
+
+/* Estilo para el pie de la tabla */
+tfoot {
+  background-color: var(--color-negro);
+  color: var(--color-dorado);
+  text-align: center;
+  font-weight: bold;
+  padding: 12px 15px;
+}
+
+/* Estilo de la tabla en dispositivos móviles */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}

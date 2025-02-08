@@ -1,0 +1,56 @@
+/* Estilos para listas */
+.opciones-transporte,
+.rutas-lista,
+.consejos-lista,
+.opciones-turisticas,
+.preguntas-frecuentes {
+    font-size: clamp(1.4rem, 1.6vw, 1.8rem);
+    list-style-type: none; /* Elimina los bullets predeterminados */
+    padding-left: 0; /* Elimina el padding izquierdo */
+    margin: 1rem 0; /* Espaciado exterior */
+    color: azure;
+}
+
+.opciones-transporte li,
+.rutas-lista li,
+.consejos-lista li,
+.opciones-turisticas li,
+.preguntas-frecuentes .pregunta {
+    padding: 0.75rem 1rem; /* Espaciado interior */
+    margin: 0.5rem 0; /* Espaciado entre elementos */
+    background-color: #2f2f2ff6; /* Fondo azure */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.opciones-transporte li:hover,
+.rutas-lista li:hover,
+.consejos-lista li:hover,
+.opciones-turisticas li:hover,
+.preguntas-frecuentes .pregunta:hover {
+    background-color: #1c1c1c; /* Cambio de color al hacer hover */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Estilos para títulos dentro de las listas */
+.opciones-transporte li strong,
+.rutas-lista li strong,
+.consejos-lista li strong,
+.opciones-turisticas li strong {
+    color: #ff6961; /* Color azul oscuro para resaltar */
+    font-weight: 600; /* Grosor de la fuente */
+}
+
+/* Estilos específicos para preguntas frecuentes */
+.pregunta-titulo {
+    color: #ff6961; /* Color azul oscuro para preguntas */
+    font-size: clamp(1.4rem, 1.6vw, 1.8rem); /* Tamaño de fuente */
+    margin-bottom: 0.5rem; /* Espaciado inferior */
+}
+
+.pregunta-respuesta {
+    color: azure; /* Color de texto oscuro para respuestas */
+    font-size: clamp(1.3rem, 1.5vw, 1.7rem); /* Tamaño de fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+}

@@ -1,0 +1,39 @@
+    .consejos-lista {
+        list-style-type: none;
+        font-size: clamp(1.4rem, 1.6vw, 1.8rem);
+        margin: 1rem 0;
+        color: azure;
+    }
+    .consejos-lista li {
+        background-color: rgb(70, 70, 70);
+        padding: 0.75rem 1rem;
+        margin: 0.5rem 0;
+        box-shadow: 0 2px 4px rgba(27, 26, 26, 0.403);
+        transition: background-color 0.3s ease, transform 0.3s  ease;
+    }
+    .consejos-lista li:hover {
+        transform: translateY(0.3);
+        background-color: #1c1c1c;
+    }
+    .consejos-lista strong {
+        font-weight: 600;
+        color: #ff6961;
+    }
+    .destino-enlace {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: transparent;
+        color: #ff6961;
+        text-decoration: none;
+        border: 2px solid #ff6961;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+    .destino-enlace:hover {
+        background-color: #ff6961;
+        color: #1c1c1c;
+        border-color: #ff6961;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(255, 185, 97, 0.2)
+
+    }

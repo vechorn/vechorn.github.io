@@ -1,0 +1,111 @@
+
+    tr {
+        font-size: clamp(1rem, 1.2vw, 1.4rem);
+        font-weight: 300;
+        color: azure;
+    }
+    th {
+        color:#d4af37;
+    }
+    table {
+  
+      width: 100%;
+      border-collapse: collapse;
+      background-color: var(--color-gris-oscuro);
+      margin-top: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+    
+    /* Estilo para las cabeceras de la tabla */
+    th {
+      background-color: var(--color-negro);
+      color: var(--color-dorado);
+      padding: 12px 15px;
+      text-align: left;
+      font-weight: bold;
+      border-bottom: 2px solid var(--color-dorado);
+    }
+    
+    /* Estilo para las celdas de la tabla */
+    td {
+      background-color: var(--color-fondo);
+      color: var(--color-gris-claro);
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid var(--color-dorado);
+    }
+    
+    /* Estilo para las filas pares */
+    tr:nth-child(even) td {
+      background-color: var(--color-gris-oscuro);
+    }
+    
+    /* Estilo para la fila activa o cuando el usuario pasa el ratón */
+    tr:hover {
+      background-color: var(--color-negro);
+      cursor: pointer;
+    }
+    
+    /* Estilo para la primera columna */
+    td:first-child {
+      font-weight: bold;
+      color: var(--color-dorado);
+    }
+    
+    /* Estilo para el borde de la tabla */
+    table, th, td {
+      border: 1px solid var(--color-dorado);
+    }
+    
+    /* Estilo para el pie de la tabla */
+    tfoot {
+      background-color: var(--color-negro);
+      color: var(--color-dorado);
+      text-align: center;
+      font-weight: bold;
+      padding: 12px 15px;
+    }
+    
+    /* Estilo de la tabla en dispositivos móviles */
+    @media (max-width: 768px) {
+      table {
+        width: 100%;
+        font-size: 14px;
+      }
+    
+      th, td {
+        padding: 10px;
+      }
+    }
+    
+    /* Imagen Interactiva */
+.map-interactive img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: sepia(50%) saturate(130%) brightness(90%);
+  transition: filter 0.3s ease;
+}
+
+.map-interactive img:hover {
+  filter: sepia(0%) saturate(100%) brightness(100%);
+}
+
+.map-interactive p {
+  font-size: 14px;
+  color: #d4af37;
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .map-interactive img {
+    max-height: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .map-interactive img {
+    max-height: 250px;
+  }
+}
